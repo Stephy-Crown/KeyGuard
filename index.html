@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>KeyGuard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+   
+
+    <div class="container">
+      <!-- <h3>eKeyPass</h3> -->
+      <h1>KeyGuard</h1>
+
+      <h3 >
+        Your Ultimate Secure <span class="highlight">Password Generator</span>
+      </h3>
+    
+      <p >Never use an insecure password again.</p>
+
+      <label for="password-length" >Password Length:</label>
+      <input type="number" id="password-length" value="15" min="6" max="30" />
+
+      <div class="toggle-container">
+        <label class="toggle">
+          Include Symbols
+          <input type="checkbox" id="include-symbols" checked />
+          <span class="slider"></span>
+        </label>
+        <label class="toggle">
+          Include Numbers
+          <input type="checkbox" id="include-numbers" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <button id="generate-btn">Generate Passwords</button>
+      <div id="password1" class="password-box">
+        <span>Password 1</span>
+        <span class="copy-icon"> <i class="bi bi-clipboard"></i></span>
+         
+        
+      </div>
+      
+      <div id="password2" class="password-box">
+        <span>Password 2</span>
+        <span class="copy-icon"> <i class="bi bi-clipboard"></i></span>
+       
+      </div>
+      
+    
+
+    <footer class="footer">
+      <div>Made with ❤️ by Stephanie Udemezue</div>
+      <div class="social-icons">
+        <a href="https://github.com/Stephy-Crown" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/Stephanie-udemezue-4a858b190/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="udemezuestephanie6@gmail.com" title="Mail"><i class="bi bi-envelope"></i></a> 
+      </div>
+    </footer>
+
+    <script src="/index.js"></script>
+  </body>
+</html>

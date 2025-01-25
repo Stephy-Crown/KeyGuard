@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Parkinsans:wght@500&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #1c1c1c;
+  color: white;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: #1f2937;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container .span {
+  color: #10b981;
+}
+.container h1 {
+  color: #10b981;
+  font-family: Karla;
+}
+.container h3 {
+  font-family: Karla;
+  margin-bottom: 0;
+  /* font-size: 12px; */
+}
+.container p {
+  margin-top: 3px;
+  font-family: Karla;
+  font-size: 12px;
+}
+button {
+  background-color: #10b981;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #28a828;
+}
+.password-box {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #2a2a3b;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* General container styles */
+.container {
+  font-family: Arial, sans-serif;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Highlight text in the header */
+.highlight {
+  color: #10b981;
+}
+
+/* Input styling */
+input[type="number"] {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Adjust input field for small screens */
+@media (max-width: 480px) {
+  input[type="number"] {
+    width: 30%; /* Make the input shorter on small screens */
+  }
+  .container h3 {
+    width: 40 px;
+  }
+  .container {
+    max-width: 400px;
+  }
+}
+
+/* @media (max-width: 480px) {
+  body {
+    font-family: "Arial", sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+} */
+/* body {
+  font-family: 'Arial', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+} */
+
+/* Toggle container styles */
+.toggle-container {
+  margin-bottom: 10px;
+  font-family: Inter;
+}
+
+/* Toggle switch styles */
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #10b981;
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #28a428;
+}
+
+/* Password box styles */
+.password-box {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* background-color: #f9f9f9; */
+  color: #10b981;
+  font-family: Inter;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.social-icons a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: var(--text-color);
+}
+.copy-icon {
+  color: #6a11cb;
+  cursor: pointer;
+}
+
+#generate-btn {
+  width: 100%;
+  padding: 12px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+.toast.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-20px);
+}
+
+.copy-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #555;
+  display: none;
+}
+
+.copy-icon:hover {
+  color: #10b981;
+}
+
+.social-icons a {
+  color: #10b981;
+}
